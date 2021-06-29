@@ -63,5 +63,8 @@ node_modules/
 .yarn-integrity
 
 # dotenv environment variables file
-.env.dev
-.env.prod
+.env.development
+.env.production
+
+# ignore build files
+build/
