@@ -3,12 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.1.10",
+    "firebase": "^8.6.8",
+    "firebase-tools": "^9.14.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-icons-wrapper": "^1.0.8",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-scroll": "^1.8.2",
+    "redux-persist": "^6.0.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -34,5 +45,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "jest-environment-jsdom": "^27.0.3",
+    "prettier": "^2.3.1",
+    "react-test-renderer": "^17.0.2"
   }
 }
