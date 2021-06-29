@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 import DisplayItem from "../DisplayItem";
 
 const Display = ({ selection }) => {
-  const API_KEY = "c23c1404-f353-45ab-b560-30353a7f8a35";
   const [leaders, setLeaders] = useState([]);
 
   console.log(selection);
@@ -16,7 +15,7 @@ const Display = ({ selection }) => {
         `https://api2.r6stats.com/public-api/leaderboard/pc/${selection.value}`,
         {
           headers: {
-            Authorization: `Bearer ${API_KEY}`,
+            Authorization: `Bearer ${process.env.REACT_APP_R6_STATS_API_KEY}`,
           },
         }
       );

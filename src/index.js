@@ -9,19 +9,20 @@ import reportWebVitals from "./reportWebVitals";
 import App from "./App";
 
 //Initialize firebase instance
+console.log(process.env);
 const firebaseConfig = {
-  apiKey: "AIzaSyBCjJ5Bul3K85JIMGF661X7tOzXbd53ohw",
-  authDomain: "r6stats-6cca3.firebaseapp.com",
-  projectId: "r6stats-6cca3",
-  storageBucket: "r6stats-6cca3.appspot.com",
-  messagingSenderId: "493627799132",
-  appId: "1:493627799132:web:e153b4be00382de82bd899",
-  measurementId: "G-5XYZ8GQK4M",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 };
 
 firebase.initializeApp(firebaseConfig);
 
-if (true) {
+if (process.env.REACT_APP_MODE === 'DEVELOPMENT') {
   firebase.auth().useEmulator('http://localhost:9099/');
 }
 
